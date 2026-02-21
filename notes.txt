@@ -1,0 +1,23 @@
+------Class #3: Models------
+models = Data (Layer) = SQL (not in this case)
+
+In order to create a model we need to create a class inside of models.py
+class needs to inhert from models.model in order to work
+each class that we create needs attributes (these ones are going to be the colums on our table)
+each class can have differnt functions (like dunder method str)
+
+sub-commands related to models
+1. makemigrations- Help us to generate the migration files from a models.py
+2. migate- Help us apply changes to the database from migration file
+
+-----Migration File --------
+A python file that contains the tasks to perfom into the db
+
+-----Others------
+In order to enter teh django admin site we need to crate a super user
+Execute: python manage.py createsuperuser
+
+In order to display the model in the admin site we need to register the model inside of admin.py
+add to that file: 
+1. the import of teh model (from .models import Post)
+2. the command: admin.site.register(post)
